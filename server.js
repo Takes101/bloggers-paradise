@@ -5,6 +5,7 @@ const exphbs = require('express-handlebars');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+require('dotenv').config();
 
 const sequelize = require("./config/connection.js");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
